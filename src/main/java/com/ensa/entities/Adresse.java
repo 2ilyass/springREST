@@ -22,8 +22,13 @@ public class Adresse {
     @ManyToOne
     Friend friend;
 
+    public Friend getFriend() {
+        return friend;
+    }
 
-
+    public void setFriend(Friend friend) {
+        this.friend = friend;
+    }
 
     public Adresse(String street, String city) {
         this.street = street;
